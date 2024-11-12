@@ -1,0 +1,18 @@
+la strategie gagnante ici est qu'il faut etre le premier à jouer et il faut jouer au coin
+c'est juste le jeu du morpion.
+on va créer une liste de liste et faire en sorte qu'on puisse jouer contre 1 vs 2 ou 1 vs IA
+On va implémenter une ia pour ça
+matrice de trois colonnes trois lignes.
+Donc faire en sorte que quand c'est Ia qui commence à jouer, il gagne à tous les coups.
+on va utiliser l'algorithme du min-max
+
+fonctions : creation de la grille initfrid, affichage de la grille affich_grid, fonction pour verifier la victoire
+victory, take ligne, take col, take diag, victory line, diag, et column, onemove, 
+playplay (demander au joueur où jouer) et playcomp qui choisira où l'ordinateur jouera pour la première fois
+car la suite des coups sera déterminée par algo minmax
+fonction menu pour demander s'il faut jouer avec l'ordi ou un joueur
+
+playmain pour jouer
+
+algo minmax : 
+creer une grid temporaire : grid_temporary, minmax pour determiner le meilleur coup
