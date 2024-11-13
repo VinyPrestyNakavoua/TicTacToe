@@ -1,10 +1,10 @@
+import java.util.Scanner;
+
 public class Player {
     private String name;
-    private String symbol;
 
     public Player(String name, String symbol) {
         this.name = name;
-        this.symbol = symbol;
     }
 
 
@@ -12,7 +12,17 @@ public class Player {
         return this.name;
     }
 
-    public String getSymbol() {
-        return this.symbol;
+    public int askRow(){
+        Scanner input = new Scanner(System.in);
+        int row  = input.nextInt();
+        input.close();
+        return row;
+    }
+
+    public int askCol(){
+        Scanner input = new Scanner(System.in);
+        int col  = input.nextInt();
+        input.close();
+        return col;
     }
 }
