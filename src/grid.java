@@ -124,6 +124,23 @@ public class grid {
         return victory(getCol(col), 3);
     }
 
+    public boolean isFull() {
+        int count = 0;
+        for (int i=0; i<3; i++){
+            for (int j=0; j<3; j++){
+                if (getCell(i,j) != 0){
+                    count = count + 1;
+                }
+            }
+        }
+        if (count == 9){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
 
 
 
